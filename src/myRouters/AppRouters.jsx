@@ -11,6 +11,7 @@ import Distribution from "../pages/Distribution";
 import Bloq from "../pages/Bloq";
 import BloqSingle from "../pages/BloqSingle";
 import Contact from "../pages/Contact";
+import License from "../pages/License";
 
 const AppRoutes = () => {
   const my_Routers = [
