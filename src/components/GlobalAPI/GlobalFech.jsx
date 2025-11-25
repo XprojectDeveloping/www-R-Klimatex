@@ -1,6 +1,6 @@
 import { useEffect, useState } from "react";
 
-function GlobalFech() {
+function useGlobalFech() {
   const [data, setData] = useState([]);
 
   useEffect(() => {
@@ -22,4 +22,4 @@ function GlobalFech() {
   return { data };
 }
 
-export default GlobalFech;
+export default useGlobalFech;
