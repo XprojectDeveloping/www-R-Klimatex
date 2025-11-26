@@ -6,7 +6,7 @@ import headerFacebookIco from "../assets/img/header/header-facebook-ico.svg";
 import headerKlimatexLogo from "../assets/img/header/header-klimatex-logo.svg";
 import GlobalFech from "../components/GlobalAPI/GlobalFech";
 import { useTranslation } from "react-i18next";
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import Lang from "../components/Language/Lang";
 import { Link, NavLink } from "react-router-dom";
 
@@ -28,10 +28,30 @@ function Header({ text }) {
 
   const { data } = GlobalFech();
 
+  const [scroll, setScroll] = useState();
+  const SCROLL_Y = 200;
+
+  useEffect(() => {
+    const handleScroll = () => {
+      if (window.scrollY > SCROLL_Y) {
+        setScroll(true);
+      } else {
+        setScroll(false);
+      }
+    };
+
+    window.addEventListener("scroll", handleScroll);
+    return () => window.removeEventListener("scroll", handleScroll);
+  }, []);
+
   return (
     <>
-      <header className="py-[3rem] px-[6rem] fixed top-[0] left-[0] right-[0] z-[200] ">
-        <div className="flex justify-between">
+      <header
+        className={`fixed top-[0] left-[0] right-[0] z-[200] transition-all duration-300 ease-in-out ${
+          scroll ? "px-[0] py-[0]" : "px-[6rem] py-[3rem]"
+        }`}
+      >
+        <div className={`flex justify-between ${scroll ? "hidden" : ""}`}>
           <div className="flex items-center gap-[2rem]">
             <Lang
               toggle={() => setOpen(!open)}
@@ -96,8 +116,11 @@ function Header({ text }) {
             </div>
           </div>
         </div>
-
-        <div className="flex justify-between mt-[1rem] bg-[#FFFFFF] p-[1.75rem]">
+        <div
+          className={`flex justify-between  bg-[#FFFFFF] p-[1.75rem] transition-all duration-300 ease-in-out ${
+            scroll ? "mt-[0]" : "mt-[1rem]"
+          }`}
+        >
           <div className="logo">
             <Link to={"/"}>
               <img

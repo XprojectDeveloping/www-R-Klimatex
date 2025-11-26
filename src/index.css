@@ -67,3 +67,14 @@ header .borderLeft a {
 header .borderLeft a:hover {
   color: #3ea3dc;
 }
+
+body main h2 {
+  font-size: 5rem;
+  color: #ffff;
+  font-weight: 700;
+}
+
+footer input {
+  background: none;
+  border: 2px solid #ffffff;
+}
