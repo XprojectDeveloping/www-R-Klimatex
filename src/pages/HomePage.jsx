@@ -4,39 +4,58 @@ import { useTranslation } from "react-i18next";
 import useGlobalFech from "../components/GlobalAPI/GlobalFech";
 import { getMultiLang as ml } from "../components/Language/translation/MultiLang.js";
 import DOMPurify from "dompurify";
+import { Swiper, SwiperSlide } from "swiper/react";
+import "swiper/css";
+import "swiper/css/pagination";
+import { Pagination } from "swiper/modules";
 function HomePage({ text }) {
   const [t] = useTranslation("translation");
   const { data } = useGlobalFech();
   return (
     <>
       <main>
-        {data?.homebanner &&
-          data?.homebanner?.map((item) => {
-            return (
-              <div className="relative" key={item?.id}>
-                <img
-                  src={item?.src}
-                  alt={ml(item?.alt_az, item?.alt_ru, item?.alt_en)}
-                />
+        {/* HomePage banner section */}
 
-                <div
-                  className="banner text-[5rem] text-[#ffffff] font-bold absolute top-[34rem] left-[9rem]"
-                  dangerouslySetInnerHTML={{
-                    __html: DOMPurify.sanitize(
-                      ml(item?.title_az, item?.title_ru, item?.title_en)
-                    ),
-                  }}
-                />
-              </div>
-            );
-          })}
+        <section>
+          {data?.homebanner &&
+            data?.homebanner?.map((item) => {
+              return (
+                <div className="relative" key={item?.id}>
+                  <img
+                    src={item?.src}
+                    alt={ml(item?.alt_az, item?.alt_ru, item?.alt_en)}
+                  />
 
-        <div className="px-[6rem] mt-[9rem] mb-[9rem] flex">
+                  <div
+                    className="banner text-[5rem] text-[#ffffff] font-bold absolute top-[34rem] left-[9rem]"
+                    dangerouslySetInnerHTML={{
+                      __html: DOMPurify.sanitize(
+                        ml(item?.title_az, item?.title_ru, item?.title_en)
+                      ),
+                    }}
+                  />
+                </div>
+              );
+            })}
+        </section>
+
+        {/* HomePage about section */}
+
+        <section className="px-[6rem] mt-[9rem] mb-[9rem] flex">
           <div className="flex flex-col gap-[4rem]">
             <h2 className="text-[4rem] ">{t("homePageH2")}</h2>
-            <p className="text-[1.6rem] font-normal text-justify">
-              {t("homePageP1")}
-            </p>
+            <div
+              className="text-[1.6rem] font-normal text-justify"
+              dangerouslySetInnerHTML={{
+                __html: DOMPurify.sanitize(
+                  ml(
+                    data?.options?.misiya?.missiya_text_az,
+                    data?.options?.misiya?.missiya_text_ru,
+                    data?.options?.misiya?.missiya_text_en
+                  )
+                ),
+              }}
+            />
             <h3 className="text-[2.5rem] font-semibold">{t("homePageH3")}</h3>
             <p className="text-[1.6rem] font-normal text-justify">
               {t("homePageP2")}
@@ -52,27 +71,108 @@ function HomePage({ text }) {
           </div>
           <img
             src={data?.options?.misiya?.missiya_image}
-            className="px-[5rem]"
+            className="px-[5rem] w-[50%]"
             alt="missiya_image"
           />
-        </div>
+        </section>
 
-        <div className="services-bg flex items-center justify-center flex-col relative">
-          <img src={homePageServicesBg} alt="services-bg" />
+        {/* HomePage services, project section */}
 
-          <div className="flex items-center justify-center flex-col h-[500px] absolute">
-            <h2 className="pb-[1.3rem] text-[5.5rem] font-semibold leading-[100%] text-[#ffffff]">
-              {t("homePageServicesH2")}
-            </h2>
-            <p className="text-[3.2rem] font-normal leading-[100%] text-[#ffffff]">
-              {t("homePageServicesP")}
-            </p>
+        <section className="bg-[#EFEFEF]">
+          <div className="services-bg flex items-center justify-center flex-col relative">
+            <img src={homePageServicesBg} alt="services-bg" />
+
+            <div className="flex items-center justify-center flex-col h-[500px] absolute">
+              <h2 className="pb-[1.3rem] text-[5.5rem] font-semibold leading-[100%] text-[#ffffff]">
+                {t("homePageServicesH2")}
+              </h2>
+              <p className="text-[3.2rem] font-normal leading-[100%] text-[#ffffff]">
+                {t("homePageServicesP")}
+              </p>
+            </div>
           </div>
-        </div>
 
-        <div className="">
-          
-        </div>
+          <div className="px-[6rem] mb-[14rem] container flex items-center w-[100%] h-[100%]">
+            <Swiper
+              slidesPerView={0}
+              spaceBetween={0}
+              breakpoints={{
+                640: {
+                  slidesPerView: 2,
+                  spaceBetween: 0,
+                },
+                768: {
+                  slidesPerView: 4,
+                  spaceBetween: 0,
+                },
+                1024: {
+                  slidesPerView: 5,
+                  spaceBetween: 0,
+                },
+              }}
+              modules={[Pagination]}
+              className="mySwiper"
+            >
+              {data?.service &&
+                data?.service?.map((item) => {
+                  return (
+                    <SwiperSlide key={item.id}>
+                      <img src={item?.src} alt="" />
+                    </SwiperSlide>
+                  );
+                })}
+            </Swiper>
+          </div>
+
+          <div className="px-[6rem]">
+            <div className="grid grid-cols-[repeat(auto-fit,minmax(400px,1fr))]">
+              {data?.layihe &&
+                data?.layihe?.slice(0, 6).map((item) => {
+                  return (
+                    <div className="" key={item?.id}>
+                      <img
+                        src={item?.cover}
+                        className="grayscale"
+                        alt={ml(item?.alt_az, item?.alt_ru, item?.alt_en)}
+                      />
+                    </div>
+                  );
+                })}
+            </div>
+          </div>
+
+          <div className="px-[6rem] py-[8rem]">
+            <Swiper
+              slidesPerView={0}
+              spaceBetween={0}
+              breakpoints={{
+                640: {
+                  slidesPerView: 2,
+                  spaceBetween: 0,
+                },
+                768: {
+                  slidesPerView: 4,
+                  spaceBetween: 0,
+                },
+                1024: {
+                  slidesPerView: 5,
+                  spaceBetween: 0,
+                },
+              }}
+              modules={[Pagination]}
+              className="mySwiper bg-[white] "
+            >
+              {data?.brend &&
+                data?.brend?.map((item) => {
+                  return (
+                    <SwiperSlide className="p-[4rem] " key={item.id}>
+                      <img src={item?.src} alt="brend" />
+                    </SwiperSlide>
+                  );
+                })}
+            </Swiper>
+          </div>
+        </section>
       </main>
     </>
   );
