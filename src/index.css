@@ -1,4 +1,3 @@
-
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
@@ -69,6 +68,14 @@ header .borderLeft a:hover {
   color: #3ea3dc;
 }
 
+header .tel-hov {
+  transition: 0.3s linear;
+}
+
+header .tel-hov:hover {
+  color: #3ea3dc;
+}
+
 footer input {
   background: none;
   border: 2px solid #ffffff;
@@ -84,3 +91,23 @@ main .services-bg::before {
   background-color: #ee2f41;
   mix-blend-mode: multiply;
 }
+
+main .hpTel-hov {
+  transition: 0.3s linear;
+}
+
+main .hpTel-hov:hover {
+  color: #3ea3dc;
+}
+
+main .services-bg-hov:hover {
+  background-color: #3ea3dc;
+}
+
+main .services-bg-hov:hover p {
+  color: white;
+}
+
+/* main .services-bg-hov:hover img {
+  background-color: ;
+} */

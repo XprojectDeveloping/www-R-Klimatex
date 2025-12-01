@@ -85,7 +85,7 @@ function Header({ text }) {
           </div>
           <div className="flex gap-[3rem]">
             <a
-              className="flex items-center text-[1.2rem] gap-[1rem]"
+              className="tel-hov flex items-center text-[1.5rem] text-[#ffffff] font-normal leading-[100%] gap-[1rem]"
               href={data?.options?.options?.tel2}
             >
               <img className="max-w-[2rem]" src={headerPhoneIco} alt="phone" />
