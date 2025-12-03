@@ -108,6 +108,25 @@ main .services-bg-hov:hover p {
   color: white;
 }
 
+main .project-bg-hov {
+  transition: 0.3s linear;
+}
+
+main .project-bg-hov:hover {
+  background-color: gray;
+}
+
+main .project-bg-hov:hover a {
+  color: #ffffff;
+}
+
+main .project-card{
+  transition: 0.3s linear;
+}
+
+main .project-card:hover {
+  transform: scale(1.03);
+}
 /* main .services-bg-hov:hover img {
   background-color: ;
 } */

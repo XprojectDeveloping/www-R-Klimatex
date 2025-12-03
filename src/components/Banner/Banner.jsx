@@ -1,7 +1,4 @@
-import { useTranslation } from "react-i18next";
-
 function Banner({ text, img }) {
-  const [t] = useTranslation("translation");
   return (
     <>
       <div className="relative flex items-center justify-center flex-col">

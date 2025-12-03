@@ -17,5 +17,11 @@
   "homePageServicesP": "Сервисы",
   "aboutPageH2": " О нас ",
   "projectPageH2": "Наши проекты",
-  "projectButtonText": "Посмотреть все"
+  "projectButtonText": "Посмотреть все",
+  "aboutPageMissiyaH2": "Наша компания работает под названием “Klimatex” с 2004 года. ",
+  "aboutPageMissiyaP": "Основная сфера деятельности - проектирование и установка систем отопления, вентиляции, кондиционирования и водоснабжения. Кроме того, компания Klimatex производит воздуховоды и диффузоры, а также осуществляет установку систем автоматического управления во всех вышеупомянутых областях. В зависимости от своей сферы деятельности Klimatex сотрудничает со многими ведущими брендами мира. На все выполненные работы предоставляется круглогодичное сервисное обслуживание. Наша основная цель как Klimatex - обеспечить профессиональную деятельность в нашей стране в перечисленных выше областях и оправдать доверие пользователей.",
+  "aboutPageExhibitionH2": "Выставка Klimatex",
+  "aboutPageExhibitionP": "Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat. Duis autem vel eum iriure dolor in hendrerit in vulputate velit esse molestie consequat, vel illum dolore eu feugiat nulla facilisis at vero eros et accumsan et iusto odio dignissim qui Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat. Duis autem vel eum iriure dolor in hendrerit in vulputate velit esse molestie consequat, vel illum dolore eu feugiat nulla facilisis at vero eros et accumsan et iusto odio dignissim qui ",
+  "AboutPageExhibitionImgH2": "Изображения выставки",
+  "AboutPageExhibitionImgButton": "Посмотреть все"
 }

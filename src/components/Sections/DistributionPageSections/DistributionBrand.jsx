@@ -2,6 +2,7 @@ import { Swiper, SwiperSlide } from "swiper/react";
 import { Pagination } from "swiper/modules";
 import "swiper/css";
 import "swiper/css/pagination";
+import { Link } from "react-router-dom";
 function DistributionBrand({ distributionData }) {
   return (
     <>
@@ -32,11 +33,13 @@ function DistributionBrand({ distributionData }) {
               return (
                 <SwiperSlide key={item.id}>
                   <div className="p-[3rem]">
-                    <img
-                      className="w-full h-[45px] object-contain grayscale "
-                      src={item?.src}
-                      alt="brend"
-                    />
+                    <Link to={"/distribution"} className="brand-hov">
+                      <img
+                        className="w-full h-[45px] object-contain grayscale"
+                        src={item?.src}
+                        alt="brend"
+                      />
+                    </Link>
                   </div>
                 </SwiperSlide>
               );
