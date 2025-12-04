@@ -15,7 +15,7 @@
   "homePageP2": "Providing high-level service to customers in the design and construction of ventilation, heating and cooling systems, fire safety systems, boiler rooms, collector-drainage networks.",
   "homePageServicesH2": "Climate and Technology",
   "homePageServicesP": "Services",
-  "aboutPageH2": " About Us ",
+  "aboutPageBanner": " About Us ",
   "projectPageH2": "Our Projects",
   "projectButtonText": "View All",
   "aboutPageMissiyaH2": "Our company has been operating under the name “Klimatex” since 2004. ",
@@ -23,5 +23,8 @@
   "aboutPageExhibitionH2": "Klimatex Exhibition ",
   "aboutPageExhibitionP": "Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat. Duis autem vel eum iriure dolor in hendrerit in vulputate velit esse molestie consequat, vel illum dolore eu feugiat nulla facilisis at vero eros et accumsan et iusto odio dignissim qui Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat. Duis autem vel eum iriure dolor in hendrerit in vulputate velit esse molestie consequat, vel illum dolore eu feugiat nulla facilisis at vero eros et accumsan et iusto odio dignissim qui ",
   "AboutPageExhibitionImgH2": "Exhibition Images",
-  "AboutPageExhibitionImgButton": "View All"
+  "AboutPageExhibitionImgButton": "View All",
+  "AboutPageShowroomH2": "Showroom 360",
+  "AboutPageProductionH2": "Production",
+  "SevicesPageBanner": "Service"
 }

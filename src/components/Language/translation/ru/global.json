@@ -15,7 +15,7 @@
   "homePageP2": "Предоставление высококачественных услуг клиентам в области проектирования и строительства систем вентиляции, отопления и охлаждения, систем пожарной безопасности, котельных, коллекторно-дренажных сетей.",
   "homePageServicesH2": "Климат и Технологии",
   "homePageServicesP": "Сервисы",
-  "aboutPageH2": " О нас ",
+  "aboutPageBanner": " О нас ",
   "projectPageH2": "Наши проекты",
   "projectButtonText": "Посмотреть все",
   "aboutPageMissiyaH2": "Наша компания работает под названием “Klimatex” с 2004 года. ",
@@ -23,5 +23,8 @@
   "aboutPageExhibitionH2": "Выставка Klimatex",
   "aboutPageExhibitionP": "Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat. Duis autem vel eum iriure dolor in hendrerit in vulputate velit esse molestie consequat, vel illum dolore eu feugiat nulla facilisis at vero eros et accumsan et iusto odio dignissim qui Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat. Duis autem vel eum iriure dolor in hendrerit in vulputate velit esse molestie consequat, vel illum dolore eu feugiat nulla facilisis at vero eros et accumsan et iusto odio dignissim qui ",
   "AboutPageExhibitionImgH2": "Изображения выставки",
-  "AboutPageExhibitionImgButton": "Посмотреть все"
+  "AboutPageExhibitionImgButton": "Посмотреть все",
+  "AboutPageShowroomH2": "Выставка 360",
+  "AboutPageProductionH2": "Производство",
+  "SevicesPageBanner": "Сервис"
 }

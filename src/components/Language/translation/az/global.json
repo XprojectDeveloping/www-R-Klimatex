@@ -15,7 +15,7 @@
   "homePageP2": "Havalandırma, İsitmə və soyutma sistemləri, Yanğın təhlükəsizlik sistemləri, Qazanxanalar, Kollektor-drenaj şəbəkəsinin lahiyələndirilməsi və qurulması üzrə müştərilərə yüksək səviyyədə xidmət göstərilməsi.",
   "homePageServicesH2": "Klimat & Texnologiya",
   "homePageServicesP": "Xidmətlər",
-  "aboutPageH2": " Haqqımızda ",
+  "aboutPageBanner": " Haqqımızda ",
   "projectPageH2": "Layihələrimiz",
   "projectButtonText": "Hamısına bax",
   "aboutPageMissiyaH2": "Şirkətimiz “Klimatex” adı altında 2004-cü ildən fəaliyyət göstərir. ",
@@ -23,5 +23,10 @@
   "aboutPageExhibitionH2": "Klimatex şourum",
   "aboutPageExhibitionP": "Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat. Duis autem vel eum iriure dolor in hendrerit in vulputate velit esse molestie consequat, vel illum dolore eu feugiat nulla facilisis at vero eros et accumsan et iusto odio dignissim qui Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat. Duis autem vel eum iriure dolor in hendrerit in vulputate velit esse molestie consequat, vel illum dolore eu feugiat nulla facilisis at vero eros et accumsan et iusto odio dignissim qui ",
   "AboutPageExhibitionImgH2": "Şourum şəkilləri",
-  "AboutPageExhibitionImgButton": "Hamısına bax"
+  "AboutPageExhibitionImgButton": "Hamısına bax",
+  "AboutPageShowroomH2": "Şourum 360",
+  "AboutPageProductionH2": "İstehsalat",
+  "AboutPageServisH2": "Servis",
+  "SevicesPageBanner": "Xidmətlər",
+  "PorjectsPageBanner": "Layihələrimiz"
 }

@@ -45,7 +45,9 @@ function HomePage() {
             pText={t("homePageServicesP")}
           />
 
-          <ServicesSlider sliderData={data?.service} />
+          <div className="mt-[-10rem] mb-[14rem]">
+            <ServicesSlider sliderData={data?.service} />
+          </div>
 
           <ProjectPageSection
             projectData={data?.layihe}
