@@ -25,7 +25,7 @@ function ProjectPageSection({ projectData, h2Title, buttonText }) {
                   className="project-card col-span-4 md:col-span-6 sm:col-span-12"
                   key={item?.id}
                 >
-                  <Link to={"/projects"}>
+                  <Link to={`/projects/s/${item?.id}/${item?.slug_az}`}>
                     <img
                       src={item?.cover}
                       className="grayscale"

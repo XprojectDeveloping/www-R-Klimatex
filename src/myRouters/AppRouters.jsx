@@ -25,7 +25,7 @@ const AppRoutes = () => {
       element: <About />,
     },
     {
-      path: "/services",
+      path: "/services/:slug",
       element: <Services />,
     },
     {

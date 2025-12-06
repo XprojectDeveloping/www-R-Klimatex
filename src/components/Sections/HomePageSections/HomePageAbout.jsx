@@ -12,7 +12,7 @@ function HoomePageAbout({
     <>
       <section className="px-[6rem] mt-[9rem] mb-[9rem] flex">
         <div className="flex flex-col gap-[4rem]">
-          <h2 className="text-[4rem] ">{h2Title}</h2>
+          <h2 className="text-[4rem]">{h2Title}</h2>
           <div
             className="text-[1.6rem] font-normal text-justify"
             dangerouslySetInnerHTML={{

@@ -2,7 +2,6 @@ import { useEffect, useState } from "react";
 
 function useGlobalFech() {
   const [data, setData] = useState([]);
-
   useEffect(() => {
     fetch(`${import.meta.env.VITE_API}/alldata`)
       .then((res) => {
@@ -18,7 +17,6 @@ function useGlobalFech() {
         console.error("404", error);
       });
   }, []);
-
   return { data };
 }
 

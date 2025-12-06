@@ -33,13 +33,13 @@ function ServicesSlider({ sliderData }) {
             {sliderData &&
               sliderData?.map((item) => {
                 return (
-                  <SwiperSlide key={item.id}>
-                    <Link to={"/projects/s/:id/:slug"}>
+                  <SwiperSlide key={item?.id}>
+                    <Link to={`/services/${item?.slug_az}`}>
                       <div className="services-bg-hov bg-[#ffffff] p-[2rem] h-[20rem] flex items-center justify-center flex-col cursor-pointer">
                         <img
                           className="w-full h-[80px] object-contain"
                           src={item?.src}
-                          alt=""
+                          alt="card"
                         />
 
                         <p className="mt-[4.1rem] text-[2rem] text-[#40A6E0]">

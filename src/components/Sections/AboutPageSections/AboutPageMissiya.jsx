@@ -6,8 +6,8 @@ function AboutPageMissiya({
 }) {
   return (
     <>
-      <section>
-        <div className="flex px-[6rem] mt-[17rem] gap-[12rem]">
+      <section className="px-[6rem]">
+        <div className="flex mt-[17rem] gap-[12rem]">
           <div className="flex flex-col">
             <h2 className="text-[#000000] text-[5rem] font-bold leading-[100%] pb-[5rem]">
               {h2Title}

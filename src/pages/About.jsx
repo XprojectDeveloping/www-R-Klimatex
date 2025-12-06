@@ -9,82 +9,93 @@ import AboutPageExhibition from "../components/Sections/AboutPageSections/AboutP
 import AboutPageExhibitionImg from "../components/Sections/AboutPageSections/AboutPageExhibitionImg.jsx";
 import AboutPageShowroom from "../components/Sections/AboutPageSections/AboutPageShowroom.jsx";
 import AboutPageProduction from "../components/Sections/AboutPageSections/AboutPageProduction.jsx";
+import AboutPageServis from "../components/Sections/AboutPageSections/AboutPageServis.jsx";
 function About() {
   const [t] = useTranslation("translation");
   const { data } = useGlobalFech();
 
   return (
     <>
-      {/* About banner section */}
-      <section>
-        <Banner img={data?.options?.pagetopbanner} text={t("aboutPageBanner")} />
-      </section>
+      <main>
+        {/* About banner section */}
+        <section>
+          <Banner
+            img={data?.options?.pagetopbanner}
+            text={t("aboutPageBanner")}
+          />
+        </section>
 
-      {/* About about section */}
+        {/* About about section */}
 
-      <AboutPageMissiya
-        h2Title={t("aboutPageMissiyaH2")}
-        pText={t("aboutPageMissiyaP")}
-        missytaDataimg={data?.options?.about_page?.about_1_img}
-        missytaDataimgAlt={ml(
-          data?.options?.about_page?.about_1_alt_az,
-          data?.options?.about_page?.about_1_alt_ru,
-          data?.options?.about_page?.about_1_alt_en
-        )}
-      />
-
-      <div className="bg-[#EFEFEF]">
-        <AboutPageExhibition
-          h2Title={t("aboutPageExhibitionH2")}
-          pText={t("aboutPageExhibitionP")}
-          aboutDataImg={AboutPageImg}
+        <AboutPageMissiya
+          h2Title={t("aboutPageMissiyaH2")}
+          pText={t("aboutPageMissiyaP")}
+          missytaDataimg={data?.options?.about_page?.about_1_img}
+          missytaDataimgAlt={ml(
+            data?.options?.about_page?.about_1_alt_az,
+            data?.options?.about_page?.about_1_alt_ru,
+            data?.options?.about_page?.about_1_alt_en
+          )}
         />
 
-        <AboutPageExhibitionImg
-          h2Title={t("AboutPageExhibitionImgH2")}
-          aboutDataImg={data?.options?.about_page?.showroom_images}
-          buttonTitle={t("AboutPageExhibitionImgButton")}
+        <div className="bg-[#EFEFEF]">
+          <AboutPageExhibition
+            h2Title={t("aboutPageExhibitionH2")}
+            pText={t("aboutPageExhibitionP")}
+            aboutDataImg={AboutPageImg}
+          />
+
+          <AboutPageExhibitionImg
+            h2Title={t("AboutPageExhibitionImgH2")}
+            aboutDataImg={data?.options?.about_page?.showroom_images}
+            buttonTitle={t("AboutPageExhibitionImgButton")}
+            aboutImgTitle={ml(
+              data?.options?.about_page?.showroom_360_alt_az,
+              data?.options?.about_page?.showroom_360_alt_ru,
+              data?.options?.about_page?.showroom_360_alt_en
+            )}
+          />
+        </div>
+
+        <AboutPageShowroom
+          h2Title={t("AboutPageShowroomH2")}
+          aboutImg={data?.options?.about_page?.showroom_360_image}
+          aboutImgTitle={ml(
+            data?.options?.about_page?.showroom_360_alt_az,
+            data?.options?.about_page?.showroom_360_alt_ru,
+            data?.options?.about_page?.showroom_360_alt_en
+          )}
+          playButton={AboutPagePlayImg}
+          videoUrl={data?.options?.about_page?.showroom_360_video_link}
         />
-      </div>
 
-      <AboutPageShowroom
-        h2Title={t("AboutPageShowroomH2")}
-        aboutImg={data?.options?.about_page?.showroom_360_image}
-        aboutImgTitle={ml(
-          data?.options?.about_page?.showroom_360_alt_az,
-          data?.options?.about_page?.showroom_360_alt_ru,
-          data?.options?.about_page?.showroom_360_alt_en
-        )}
-        playButton={AboutPagePlayImg}
-        videoUrl={data?.options?.about_page?.showroom_360_video_link}
-      />
+        <div className="bg-[#EFEFEF]">
+          <AboutPageProduction
+            h2Title={t("AboutPageProductionH2")}
+            pText={ml(
+              data?.options?.about_page?.about_2_text_az,
+              data?.options?.about_page?.about_2_text_ru,
+              data?.options?.about_page?.about_2_text_en
+            )}
+            aboutImg={data?.options?.about_page?.about_2_img}
+            aboutImgTtitle={ml(
+              data?.options?.about_page?.about_2_alt_az,
+              data?.options?.about_page?.about_2_alt_ru,
+              data?.options?.about_page?.about_2_alt_en
+            )}
+          />
+        </div>
 
-      <div className="bg-[#EFEFEF]">
-        <AboutPageProduction
-          h2Title={t("AboutPageProductionH2")}
+        <AboutPageServis
+          h2Title={t("AboutPageServisH2")}
           pText={ml(
-            data?.options?.about_page?.about_2_text_az,
-            data?.options?.about_page?.about_2_text_ru,
-            data?.options?.about_page?.about_2_text_en
+            data?.options?.about_page?.about_3_text_az,
+            data?.options?.about_page?.about_3_text_ru,
+            data?.options?.about_page?.about_3_text_en
           )}
-          aboutImg={data?.options?.about_page?.about_2_img}
-          aboutImgTtitle={ml(
-            data?.options?.about_page?.about_2_alt_az,
-            data?.options?.about_page?.about_2_alt_ru,
-            data?.options?.about_page?.about_2_alt_en
-          )}
+          aboutImg={data?.options?.about_page?.about_3_img}
         />
-      </div>
-
-      <AboutPageProduction
-        h2Title={t("AboutPageServisH2")}
-        pText={ml(
-          data?.options?.about_page?.about_3_text_az,
-          data?.options?.about_page?.about_3_text_ru,
-          data?.options?.about_page?.about_3_text_en
-        )}
-        aboutImg={data?.options?.about_page?.about_3_img}
-      />
+      </main>
     </>
   );
 }

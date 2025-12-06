@@ -81,7 +81,7 @@ footer input {
   border: 2px solid #ffffff;
 }
 
-main .services-bg::before {
+.services-bg::before {
   content: "";
   position: absolute;
   top: 0;
@@ -92,41 +92,60 @@ main .services-bg::before {
   mix-blend-mode: multiply;
 }
 
-main .hpTel-hov {
+.hpTel-hov {
   transition: 0.3s linear;
 }
 
-main .hpTel-hov:hover {
+.hpTel-hov:hover {
   color: #3ea3dc;
 }
 
-main .services-bg-hov:hover {
+.services-bg-hov:hover {
   background-color: #3ea3dc;
 }
 
-main .services-bg-hov:hover p {
+.services-bg-hov:hover img {
+  filter: invert(8%) sepia(100%) saturate(0%) hue-rotate(339deg)
+    brightness(151%) contrast(102%);
+}
+
+.services-bg-hov:hover p {
   color: white;
 }
 
-main .project-bg-hov {
+.project-bg-hov {
   transition: 0.3s linear;
 }
 
-main .project-bg-hov:hover {
+.project-bg-hov:hover {
   background-color: gray;
 }
 
-main .project-bg-hov:hover a {
+.project-bg-hov:hover a {
   color: #ffffff;
 }
 
-main .project-card {
+.project-card {
   transition: 0.3s linear;
 }
 
-main .project-card:hover {
+.project-card:hover {
   transform: scale(1.03);
 }
+
+.services-box.active .services-bg-hov {
+  background-color: #3ea3dc;
+}
+
+.services-box.active .services-bg-hov p {
+  color: #ffffff;
+}
+
+.services-box.active .services-bg-hov img {
+  filter: invert(8%) sepia(100%) saturate(0%) hue-rotate(339deg)
+    brightness(151%) contrast(102%);
+}
+
 /* main .services-bg-hov:hover img {
   background-color: ;
 } */

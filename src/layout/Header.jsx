@@ -134,7 +134,7 @@ function Header({ text }) {
           <div className="borderLeft flex items-center gap-[2rem]">
             <NavLink to={"/"}>{t("main")}</NavLink>
             <NavLink to={"/about"}>{t("about")}</NavLink>
-            <NavLink to={"/services"}>{t("services")}</NavLink>
+            <NavLink to={"/services/layihelendirme"}>{t("services")}</NavLink>
             <NavLink to={"/projects"}>{t("projects")}</NavLink>
             <NavLink to={"/production"}>{t("products")}</NavLink>
             <NavLink to={"/distribution"}>{t("distribution")}</NavLink>
