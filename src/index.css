@@ -146,6 +146,11 @@ footer input {
     brightness(151%) contrast(102%);
 }
 
+.product-hov:hover {
+  background-color: #3ea3dc;
+  color: #ffffff;
+}
+
 /* main .services-bg-hov:hover img {
   background-color: ;
 } */

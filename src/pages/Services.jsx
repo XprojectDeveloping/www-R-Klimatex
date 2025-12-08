@@ -18,7 +18,7 @@ function Services() {
     <>
       <main>
         <section>
-          <Banner
+          <Banner 
             img={data?.options?.pagetopbanner}
             text={t("ServicesPageBanner")}
           />
