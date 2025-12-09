@@ -3,21 +3,26 @@ import useGlobalFech from "../components/GlobalAPI/GlobalFech";
 import Banner from "../components/Banner/Banner";
 import { getMultiLang as ml } from "../components/Language/translation/MultiLang.js";
 import { Link, useParams } from "react-router-dom";
+import defaultImg from "../assets/img/default-image.jpg";
 function Production() {
   const [t] = useTranslation("translation");
   const { data } = useGlobalFech();
   const { slug } = useParams();
-  const curretItem = data?.istehsalat?.find((item) => item?.slug_az === slug);
+  // const curretItem = data?.istehsalat?.find((item) => item?.slug_az === slug);
   return (
     <>
       <main>
+        {/* Production banner section */}
         <section>
-          <Banner
-            img={data?.options?.pagetopbanner}
-            text={t("ProductionPageBanner")}
-          />
+          {data?.options?.pagetopbanner && (
+            <Banner
+              img={data?.options?.pagetopbanner || defaultImg}
+              text={t("ProductionPageBanner")}
+            />
+          )}
         </section>
 
+        {/* Production items section */}
         <section className="px-[6rem] py-[6rem] bg-[#F0F0F0]">
           <div className="flex flex-row gap-[5rem]">
             {data?.istehsalat &&
@@ -28,8 +33,8 @@ function Production() {
                     key={item.id}
                   >
                     <img
-                      src={item?.src}
-                      alt={ml(item?.alt_az, item?.alt_ru, item?.alt_en)}
+                      src={item?.src || defaultImg}
+                      alt={ml(item?.alt_az, item?.alt_ru, item?.alt_en) || ""}
                     />
 
                     <Link

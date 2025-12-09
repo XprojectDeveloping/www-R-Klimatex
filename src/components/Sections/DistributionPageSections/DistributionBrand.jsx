@@ -3,6 +3,7 @@ import { Pagination } from "swiper/modules";
 import "swiper/css";
 import "swiper/css/pagination";
 import { Link } from "react-router-dom";
+import defaultImg from "../../../assets/img/default-image.jpg";
 function DistributionBrand({ distributionData }) {
   return (
     <>
@@ -36,8 +37,8 @@ function DistributionBrand({ distributionData }) {
                     <Link to={"/distribution"} className="brand-hov">
                       <img
                         className="w-full h-[45px] object-contain grayscale"
-                        src={item?.src}
-                        alt="brend"
+                        src={item?.src || defaultImg}
+                        alt="brand"
                       />
                     </Link>
                   </div>

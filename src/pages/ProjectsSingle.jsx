@@ -3,6 +3,7 @@ import { useTranslation } from "react-i18next";
 import useGlobalFech from "../components/GlobalAPI/GlobalFech";
 import { Link, useParams } from "react-router-dom";
 import { getMultiLang as ml } from "../components/Language/translation/MultiLang.js";
+import defaultImg from "../assets/img/default-image.jpg";
 function ProjectsSingle() {
   const [t] = useTranslation("translation");
   const { data } = useGlobalFech();
@@ -14,10 +15,12 @@ function ProjectsSingle() {
       <main>
         {/* Project banner section */}
         <section>
-          <Banner
-            img={data?.options?.pagetopbanner}
-            text={t("ProjectSingleBanner")}
-          />
+          {data?.options && (
+            <Banner
+              img={data?.options?.pagetopbanner || defaultImg}
+              text={t("ProjectSingleBanner")}
+            />
+          )}
         </section>
         {/* Project single section */}
 
@@ -53,7 +56,7 @@ function ProjectsSingle() {
             curretItem?.images?.map((item) => {
               return (
                 <div key={item.id}>
-                  <img src={item.src} alt="project-img" />
+                  <img src={item.src || defaultImg} alt="project-img" />
                 </div>
               );
             })}

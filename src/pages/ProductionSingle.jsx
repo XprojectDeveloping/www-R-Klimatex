@@ -2,6 +2,7 @@ import { Link, useParams } from "react-router-dom";
 import Banner from "../components/Banner/Banner";
 import useGlobalFech from "../components/GlobalAPI/GlobalFech";
 import { useTranslation } from "react-i18next";
+import defaultImg from "../assets/img/default-image.jpg";
 function ProductionSingle() {
   const [t] = useTranslation("translation");
   const { slug } = useParams();
@@ -13,12 +14,16 @@ function ProductionSingle() {
     <>
       <main>
         <section>
-          <Banner
-            img={data?.options?.pagetopbanner}
-            text={t("ProductionPageBanner")}
-          />
+          {/* Production Single banner section */}
+          {data?.options?.pagetopbanner && (
+            <Banner
+              img={data?.options?.pagetopbanner || defaultImg}
+              text={t("ProductionPageBanner")}
+            />
+          )}
         </section>
 
+        {/* Production Single links section */}
         <section className="px-[6rem] py-[6rem] flex flex-row gap-[1rem]">
           <Link
             className="text-[1.5rem] text-[#000000] font-normal leading-[100%]"
@@ -31,13 +36,14 @@ function ProductionSingle() {
           </p>
         </section>
 
+        {/* Production Single items section */}
         <section className="px-[6rem] pu-[6rem]">
           <div className="grid grid-cols-12">
             {curretItem?.products &&
               curretItem?.products.map((item) => {
                 return (
                   <div className="" key={item?.id}>
-                    <img src={item?.src} alt="" />
+                    <img src={item?.src} alt="product" />
                   </div>
                 );
               })}

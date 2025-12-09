@@ -27,9 +27,12 @@ function ProjectPageSection({ projectData, h2Title, buttonText }) {
                 >
                   <Link to={`/projects/s/${item?.id}/${item?.slug_az}`}>
                     <img
-                      src={item?.cover}
+                      src={item?.cover ?? "/src/assets/img/default-image.jpg"}
                       className="grayscale"
-                      alt={ml(item?.alt_az, item?.alt_ru, item?.alt_en)}
+                      alt={
+                        ml(item?.alt_az, item?.alt_ru, item?.alt_en) ??
+                        "banner img"
+                      }
                     />
                   </Link>
                 </div>

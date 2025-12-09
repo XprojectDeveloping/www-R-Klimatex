@@ -1,25 +1,20 @@
 import { getMultiLang as ml } from "../../Language/translation/MultiLang.js";
 import DOMPurify from "dompurify";
 function HomePageBanner({ dataBanner }) {
-  if (!dataBanner || !dataBanner.length) {
-    return null;
-  }
   return (
     <>
       <section>
         {dataBanner &&
-          dataBanner?.map((item, index) => {
+          dataBanner?.map((item) => {
             return (
               <div
                 className="relative w-full h-[600px] overflow-hidden"
-                key={item?.id ?? index}
+                key={item?.id}
               >
                 <img
-                  src={item?.src ?? "default-image.jpg"}
+                  src={item?.src}
                   className="w-full h-full object-cover"
-                  alt={
-                    ml(item?.alt_az, item?.alt_ru, item?.alt_en) ?? "banner img"
-                  }
+                  alt={ml(item?.alt_az, item?.alt_ru, item?.alt_en)}
                 />
 
                 <div

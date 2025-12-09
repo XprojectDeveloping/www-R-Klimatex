@@ -1,9 +1,10 @@
 import DOMPurify from "dompurify";
 
-function HoomePageAbout({
+function HomePageAbout({
   aboutTextData,
   aboutDataimg,
   aboutDataImgTel,
+  aboutDataTel,
   h2Title,
   h3Title,
   pText,
@@ -27,7 +28,7 @@ function HoomePageAbout({
             href="tel:+994 51 325 13 25"
           >
             <img src={aboutDataImgTel} alt="tel" />
-            {"+994 51 325 13 25"}
+            {aboutDataTel}
           </a>
         </div>
         <img
@@ -40,4 +41,4 @@ function HoomePageAbout({
   );
 }
 
-export default HoomePageAbout;
+export default HomePageAbout;

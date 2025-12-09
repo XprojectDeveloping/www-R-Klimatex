@@ -9,6 +9,7 @@ import "swiper/css";
 import "swiper/css/pagination";
 import { Tabs, TabList } from "@chakra-ui/react";
 import DOMPurify from "dompurify";
+import defaultImg from "../assets/img/default-image.jpg";
 function Services() {
   const [t] = useTranslation("translation");
   const { data } = useGlobalFech();
@@ -18,15 +19,20 @@ function Services() {
     <>
       <main>
         <section>
-          <Banner 
-            img={data?.options?.pagetopbanner}
-            text={t("ServicesPageBanner")}
-          />
+          {/*Services banner section */}
+          {data?.options?.pagetopbanner && (
+            <Banner
+              img={data?.options?.pagetopbanner || defaultImg}
+              text={t("ServicesPageBanner")}
+            />
+          )}
         </section>
 
         <div className="bg-[#EFEFEF]">
+          {/*Services slider and tab section */}
           <section>
             <div className="px-[6rem] py-[6rem]">
+              {/*Services slider section */}
               <Swiper
                 slidesPerView={0}
                 loop={true}
@@ -73,6 +79,7 @@ function Services() {
                   })}
               </Swiper>
 
+              {/*Services tab section */}
               <Tabs className="mt-[6rem]">
                 <TabList>
                   <Swiper>
@@ -103,11 +110,11 @@ function Services() {
                                 />
                               </div>
                               <img
-                                src={item?.src}
+                                src={item?.src || defaultImg}
                                 alt={ml(
-                                  item?.alt_az,
-                                  item?.alt_ru,
-                                  item?.alt_en
+                                  item?.alt_az || "",
+                                  item?.alt_ru || "",
+                                  item?.alt_en || ""
                                 )}
                               />
                             </div>

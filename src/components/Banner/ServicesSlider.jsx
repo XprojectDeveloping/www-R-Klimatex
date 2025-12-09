@@ -4,6 +4,7 @@ import { getMultiLang as ml } from "../../components/Language/translation/MultiL
 import "swiper/css";
 import "swiper/css/pagination";
 import { Link } from "react-router-dom";
+import defaultImg from "../../assets/img/default-image.jpg";
 function ServicesSlider({ sliderData }) {
   return (
     <>
@@ -38,7 +39,7 @@ function ServicesSlider({ sliderData }) {
                       <div className="services-bg-hov bg-[#ffffff] p-[2rem] h-[20rem] flex items-center justify-center flex-col cursor-pointer">
                         <img
                           className="w-full h-[80px] object-contain"
-                          src={item?.src}
+                          src={item?.src || defaultImg}
                           alt="card"
                         />
 
