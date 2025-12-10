@@ -7,7 +7,6 @@ import HomePage from "./pages/HomePage";
 import License from "./pages/License";
 import Production from "./pages/Production";
 import ProductionSingle from "./pages/ProductionSingle";
-import ProductionSingleElements from "./pages/ProductionSingleElements";
 import Projects from "./pages/Projects";
 import ProjectsSingle from "./pages/ProjectsSingle";
 import Services from "./pages/Services";
@@ -22,7 +21,6 @@ function App() {
       <ProjectsSingle />
       <Production />
       <ProductionSingle />
-      <ProductionSingleElements />
       <Distribution />
       <Bloq />
       <BloqSingle />

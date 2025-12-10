@@ -35,5 +35,15 @@
   "ProjectSingleP": "Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat. Duis autem vel eum iriure dolor in hendrerit in vulputate velit esse molestie consequat, vel illum dolore eu feugiat nulla facilisis at vero eros et accumsan et iusto odio dignissim qui blandit praesent luptatum zzril delenit augue duis dolore te feugait nulla facilisi. ",
   "ProductionPageBanner": "Production",
   "ProductionPageLink": "Production",
-  "ProductionPageP": "Ventilation diffusers"
+  "ProductionPageP": "Ventilation diffusers",
+  "ProductionSinglePageMaterial": "Material",
+  "ProductionSinglePageColor": "Color",
+  "ProductionSinglePageUsage": "Usage",
+  "ProductionSinglePageFeatures": "Features",
+  "LicensePageBanner": "Licenses",
+  "BloqPageBanner": "Blog",
+  "BloqPageH2": "Why is Ventilation Important?",
+  "BloqPageP": "Ventilation is important for creating a healthy atmosphere in living and working environments. Fresh air circulation increases oxygen levels and prevents the accumulation of dust, mold, bacteria, and various harmful gases.",
+  "BloqPageLink": "Read More",
+  "ContactPageBanner": "Contact"
 }

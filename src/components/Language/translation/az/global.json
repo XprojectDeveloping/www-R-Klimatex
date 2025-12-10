@@ -35,5 +35,15 @@
   "ProjectSingleP": "Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat. Duis autem vel eum iriure dolor in hendrerit in vulputate velit esse molestie consequat, vel illum dolore eu feugiat nulla facilisis at vero eros et accumsan et iusto odio dignissim qui blandit praesent luptatum zzril delenit augue duis dolore te feugait nulla facilisi. ",
   "ProductionPageBanner": "İstehsalat",
   "ProductionPageLink": "İstehsalat",
-  "ProductionPageP": "Havalandırma difüzorlar"
+  "ProductionPageP": "Havalandırma difüzorlar",
+  "ProductionSinglePageMaterial": "Material",
+  "ProductionSinglePageColor": "Rəng",
+  "ProductionSinglePageUsage": "istifadəsi",
+  "ProductionSinglePageFeatures": "Xüsusiyyətləri",
+  "LicensePageBanner": "Lisenziyalar",
+  "BloqPageBanner": "Bloq",
+  "BloqPageH2": "Havalandırma niyə vacibdir?",
+  "BloqPageP": "Havalandırma yaşayış və iş mühitində sağlam atmosfer yaratmaq üçün vacibdir. Təzə hava dövranı həm oksigen səviyyəsini artırır, həm də toz, küf, bakteriya və müxtəlif zərərli qazların yığılmasının qarşısını alır.",
+  "BloqPageLink": "Ətraflı",
+  "ContactPageBanner": "Əlaqə"
 }

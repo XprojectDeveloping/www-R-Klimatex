@@ -6,7 +6,6 @@ import Projects from "../pages/Projects";
 import ProjectsSingle from "../pages/ProjectsSingle";
 import Production from "../pages/Production";
 import ProductionSingle from "../pages/ProductionSingle";
-import ProductionSingleElements from "../pages/ProductionSingleElements";
 import Distribution from "../pages/Distribution";
 import Bloq from "../pages/Bloq";
 import BloqSingle from "../pages/BloqSingle";
@@ -45,10 +44,6 @@ const AppRoutes = () => {
       element: <ProductionSingle />,
     },
     {
-      path: "/production/s/e/:id/:slug",
-      element: <ProductionSingleElements />,
-    },
-    {
       path: "/distribution",
       element: <Distribution />,
     },
@@ -57,7 +52,7 @@ const AppRoutes = () => {
       element: <Bloq />,
     },
     {
-      path: "/bloq/s/:id/:sluq",
+      path: "/bloq/bloqsingle",
       element: <BloqSingle />,
     },
     {
