@@ -5,7 +5,7 @@ import { useTranslation } from "react-i18next";
 import { getMultiLang as ml } from "../components/Language/translation/MultiLang.js";
 import HomePageBanner from "../components/Sections/HomePageSections/HomePageBanner.jsx";
 import HomePageServices from "../components/Sections/HomePageSections/HomePageServices.jsx";
-import ServicesSlider from "../components/Banner/ServicesSlider.jsx";
+import ServicesSlider from "../components/Sections/ServicesPageSections/ServicesSlider.jsx";
 import ProjectPageSection from "../components/Sections/ProjectPageSections/ProjectPageSection.jsx";
 import DistributionBrand from "../components/Sections/DistributionPageSections/DistributionBrand.jsx";
 import useGlobalFech from "../components/GlobalAPI/GlobalFech.jsx";

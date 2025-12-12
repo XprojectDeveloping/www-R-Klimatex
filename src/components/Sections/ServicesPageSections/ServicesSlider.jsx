@@ -1,10 +1,10 @@
 import { Swiper, SwiperSlide } from "swiper/react";
 import { Pagination } from "swiper/modules";
-import { getMultiLang as ml } from "../../components/Language/translation/MultiLang.js";
+import { getMultiLang as ml } from "../../Language/translation/MultiLang.js";
+import defaultImg from "../../../assets/img/default-image.jpg";
 import "swiper/css";
 import "swiper/css/pagination";
 import { Link } from "react-router-dom";
-import defaultImg from "../../assets/img/default-image.jpg";
 function ServicesSlider({ sliderData }) {
   return (
     <>
