@@ -45,5 +45,7 @@
   "BloqPageH2": "Why is Ventilation Important?",
   "BloqPageP": "Ventilation is important for creating a healthy atmosphere in living and working environments. Fresh air circulation increases oxygen levels and prevents the accumulation of dust, mold, bacteria, and various harmful gases.",
   "BloqPageLink": "Read More",
-  "ContactPageBanner": "Contact"
+  "ContactPageBanner": "Contact",
+  "ContactPageTextArea": "Message",
+  "DistributionPageBanner": "Distribution"
 }

@@ -18,21 +18,21 @@ function Contact() {
         </section>
 
         <section className="px-[6rem] py-[6rem] bg-[#F1F1F1]">
-          <div className="flex justify-between">
+          <div className="flex justify-between gap-[2rem]">
             <input
-              className="w-[350px] h-[45px] text-[#949494] text-[1.3rem] pl-[1.1rem] placeholder-#949494"
+              className="w-full h-[45px] text-[#949494] text-[1.3rem] pl-[1.1rem] outline-none placeholder-#949494"
               placeholder="Ad, Soyad"
               name="name"
               type="text"
             />
             <input
-              className="w-[350px] h-[45px] text-[#949494] text-[1.3rem] pl-[1.1rem] placeholder-#949494"
+              className="w-full h-[45px] text-[#949494] text-[1.3rem] pl-[1.1rem] outline-none placeholder-#949494"
               placeholder="E-mail"
               name="email"
               type="email"
             />
             <input
-              className="w-[350px] h-[45px] text-[#949494] text-[1.3rem] pl-[1.1rem] placeholder-#949494"
+              className="w-full h-[45px] text-[#949494] text-[1.3rem] pl-[1.1rem] outline-none placeholder-#949494"
               placeholder="Nömrə"
               name="tel"
               type="email"
@@ -40,8 +40,8 @@ function Contact() {
           </div>
 
           <div className="flex pt-[5.1rem]">
-            <textarea className="text-[#949494] text-[1.3rem] p-[1rem] w-[100%] h-[200px]">
-              Messaj
+            <textarea className="text-[#949494] text-[1.3rem] outline-none resize-none p-[1rem] w-[100%] h-[200px]">
+              {t("ContactPageTextArea")}
             </textarea>
           </div>
         </section>

@@ -19,7 +19,7 @@ function License() {
         </section>
         {/* License file section */}
         <section className="px-[6rem] py-[6rem] bg-[#F1F1F1]">
-          <div className="flex flex-row justify-around gap-[2rem]">
+          <div className="flex flex-row gap-[2rem]">
             {data?.licency &&
               data?.licency?.map((item) => {
                 return (

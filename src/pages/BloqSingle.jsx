@@ -11,7 +11,6 @@ function BloqSingle() {
     <>
       <main>
         <section>
-          {/* Bloq single banner section */}
           {data?.options?.pagetopbanner && (
             <Banner
               img={data?.options?.pagetopbanner || defaultImg}
@@ -19,7 +18,6 @@ function BloqSingle() {
             />
           )}
         </section>
-        {/* Bloq single content section */}
 
         <section className="px-[6rem] py-[6rem]">
           {data?.blogall &&

@@ -35,7 +35,7 @@ function HomePage() {
             )}
             aboutDataImgTel={homePageTelIco}
             aboutDataimg={data?.options?.misiya?.missiya_image || defaultImg}
-            aboutDataTel={data?.options?.options?.tel2}
+            aboutDataTel={data?.options?.options?.tel2 || ""}
             h2Title={t("homePageH2")}
             h3Title={t("homePageH3")}
             pText={t("homePageP2")}
