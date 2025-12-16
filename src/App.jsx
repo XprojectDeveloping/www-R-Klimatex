@@ -1,33 +1,16 @@
-import About from "./pages/About";
-import Bloq from "./pages/Bloq";
-import BloqSingle from "./pages/BloqSingle";
-import Contact from "./pages/Contact";
-import Distribution from "./pages/Distribution";
-import HomePage from "./pages/HomePage";
-import License from "./pages/License";
-import Production from "./pages/Production";
-import ProductionSingle from "./pages/ProductionSingle";
-import Projects from "./pages/Projects";
-import ProjectsSingle from "./pages/ProjectsSingle";
-import Services from "./pages/Services";
+import { useEffect, useState } from "react";
+import AppRoutes from "./myRouters/AppRouters";
+import PreLoader from "./components/PreLoader/PreLoader";
 
 function App() {
-  return (
-    <>
-      <HomePage />
-      <About />
-      <Services />
-      <Projects />
-      <ProjectsSingle />
-      <Production />
-      <ProductionSingle />
-      <Distribution />
-      <Bloq />
-      <BloqSingle />
-      <Contact />
-      <License />
-    </>
-  );
+  const [loading, setLoading] = useState(true);
+
+  useEffect(() => {
+    setTimeout(() => {
+      setLoading(false);
+    }, 2000);
+  }, []);
+  return <>{loading ? <PreLoader /> : <AppRoutes />}</>;
 }
 
 export default App;

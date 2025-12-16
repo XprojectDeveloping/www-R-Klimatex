@@ -1,11 +1,11 @@
 import Header from "../layout/Header";
 import Footer from "../layout/Footer";
-import AppRoutes from "../myRouters/AppRouters";
-const Layout = () => {
+import { AnimatePresence } from "framer-motion";
+const Layout = ({ children }) => {
   return (
     <>
       <Header />
-      <AppRoutes />
+      <AnimatePresence>{children}</AnimatePresence>
       <Footer />
     </>
   );

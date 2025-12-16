@@ -3,36 +3,56 @@ import useGlobalFech from "../components/GlobalAPI/GlobalFech";
 import Banner from "../components/Banner/Banner.jsx";
 import ProjectPageSection from "../components/Sections/ProjectPageSections/ProjectPageSection.jsx";
 import defaultImg from "../assets/img/default-image.jpg";
+import { motion as m } from "framer-motion";
+import { useEffect, useState } from "react";
+import PreLoader from "../components/PreLoader/PreLoader.jsx";
 function Projects() {
   const [t] = useTranslation("translation");
   const { data } = useGlobalFech();
+  const [loading, setLoading] = useState(true);
+  useEffect(() => {}, [
+    setTimeout(() => {
+      setLoading(false);
+    }, 2000),
+  ]);
   return (
     <>
-      <main>
-        <section>
-          {/*Projects banner section */}
-          {data?.options?.pagetopbanner && (
-            <Banner
-              img={data?.options?.pagetopbanner || defaultImg}
-              text={t("ProjectsPageBanner")}
-            />
-          )}
-        </section>
-        {/*Projects items section */}
-        <div className="bg-[#EFEFEF]">
-          <section>
-            <div className="py-[5rem]">
-              {data?.layihe && (
-                <ProjectPageSection
-                  projectData={data?.layihe}
-                  h2Title={t("projectPageH2")}
-                  buttonText={t("projectButtonText")}
+      {loading ? (
+        <PreLoader />
+      ) : (
+        <>
+          <main>
+            <m.div
+              initial={{ opacity: 0 }}
+              animate={{ opacity: 1 }}
+              exit={{ opacity: 0 }}
+              transition={{ duration: 0.75, ease: "easeOut" }}
+            >
+              {/*Projects banner section */}
+              {data?.options?.pagetopbanner && (
+                <Banner
+                  img={data?.options?.pagetopbanner || defaultImg}
+                  text={t("ProjectsPageBanner")}
                 />
               )}
-            </div>
-          </section>
-        </div>
-      </main>
+              {/*Projects items section */}
+              <div className="bg-[#EFEFEF]">
+                <section>
+                  <div className="py-[5rem]">
+                    {data?.layihe && (
+                      <ProjectPageSection
+                        projectData={data?.layihe}
+                        h2Title={t("projectPageH2")}
+                        buttonText={t("projectButtonText")}
+                      />
+                    )}
+                  </div>
+                </section>
+              </div>
+            </m.div>
+          </main>
+        </>
+      )}
     </>
   );
 }

@@ -48,7 +48,7 @@ function Header({ text }) {
     <>
       <header
         className={`fixed top-[0] left-[0] right-[0] z-[200] transition-all duration-300 ease-in-out ${
-          scroll ? "px-[0] py-[0]" : "px-[6rem] py-[3rem]"
+          scroll ? "px-[0] py-[0]" : "px-[6rem] lg:px-[3rem] py-[3rem]"
         }`}
       >
         <div className={`flex justify-between ${scroll ? "hidden" : ""}`}>

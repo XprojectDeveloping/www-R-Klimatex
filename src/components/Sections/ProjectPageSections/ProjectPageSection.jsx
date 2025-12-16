@@ -1,6 +1,9 @@
 import { Link } from "react-router-dom";
 import { getMultiLang as ml } from "../../Language/translation/MultiLang.js";
+import { useTranslation } from "react-i18next";
+import defaultImg from "../../../assets/img/default-image.jpg";
 function ProjectPageSection({ projectData, h2Title, buttonText }) {
+  const [t] = useTranslation("translation");
   return (
     <>
       <section className="px-[6rem]">
@@ -19,19 +22,19 @@ function ProjectPageSection({ projectData, h2Title, buttonText }) {
             </div>
           </div>
           {projectData &&
-            projectData.slice(0, 5).map((item) => {
+            projectData.slice(0, 5).map((item, index) => {
               return (
                 <div
                   className="project-card col-span-4 md:col-span-6 sm:col-span-12"
-                  key={item?.id}
+                  key={item?.id || index}
                 >
                   <Link to={`/projects/s/${item?.id}/${item?.slug_az}`}>
                     <img
-                      src={item?.cover ?? "/src/assets/img/default-image.jpg"}
+                      src={item?.cover || defaultImg}
                       className="grayscale"
                       alt={
-                        ml(item?.alt_az, item?.alt_ru, item?.alt_en) ??
-                        "banner img"
+                        ml(item?.alt_az, item?.alt_ru, item?.alt_en) ||
+                        t("projectsPageImgAlt")
                       }
                     />
                   </Link>

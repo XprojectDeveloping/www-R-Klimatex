@@ -4,7 +4,9 @@ import "swiper/css";
 import "swiper/css/pagination";
 import { Link } from "react-router-dom";
 import defaultImg from "../../../assets/img/default-image.jpg";
+import { useTranslation } from "react-i18next";
 function DistributionBrand({ distributionData }) {
+  const [t] = useTranslation("translation");
   return (
     <>
       <section className="px-[6rem] py-[8rem]">
@@ -30,15 +32,15 @@ function DistributionBrand({ distributionData }) {
           className="mySwiper bg-[white] rounded-[0.625em]"
         >
           {distributionData &&
-            distributionData?.map((item) => {
+            distributionData?.map((item, index) => {
               return (
-                <SwiperSlide key={item.id}>
+                <SwiperSlide key={item.id || index}>
                   <div className="p-[3rem]">
                     <Link to={"/distribution"} className="brand-hov">
                       <img
                         className="w-full h-[45px] object-contain grayscale"
                         src={item?.src || defaultImg}
-                        alt="brand"
+                        alt={t("distributionBrandImgAlt")}
                       />
                     </Link>
                   </div>
