@@ -118,7 +118,7 @@ footer input {
 }
 
 .project-bg-hov:hover {
-  background-color: gray;
+  background-color: #808080;
 }
 
 .project-bg-hov:hover a {
@@ -148,6 +148,31 @@ footer input {
 
 .product-hov:hover {
   background-color: #3ea3dc;
+  color: #ffffff;
+}
+
+footer button {
+  transition: 0.3s linear;
+}
+
+footer button:hover {
+  background-color: #808080;
+  color: #ffffff;
+}
+
+footer a {
+  transition: 0.3s linear;
+}
+
+footer a:hover {
+  color: #ffffff;
+}
+
+.burger-link-hov {
+  transition: 0.3s linear;
+}
+
+.burger-link-hov:hover {
   color: #ffffff;
 }
 

@@ -9,6 +9,7 @@ import { useTranslation } from "react-i18next";
 import { useEffect, useState } from "react";
 import Lang from "../components/Language/Lang";
 import { Link, NavLink } from "react-router-dom";
+import BurgerMenu from "../components/BurgerMenu/BurgerMenu";
 
 function Header({ text }) {
   const [t, i18n] = useTranslation("translation");
@@ -48,7 +49,9 @@ function Header({ text }) {
     <>
       <header
         className={`fixed top-[0] left-[0] right-[0] z-[200] transition-all duration-300 ease-in-out ${
-          scroll ? "px-[0] py-[0]" : "px-[6rem] lg:px-[3rem] py-[3rem]"
+          scroll
+            ? "px-[0] py-[0]"
+            : "px-[6rem] lg:px-[3rem] md:px-[2.5rem] sm:px-[1rem] py-[3rem] md:py-[2.5rem] sm:py-[1.5rem]"
         }`}
       >
         <div className={`flex justify-between ${scroll ? "hidden" : ""}`}>
@@ -117,7 +120,7 @@ function Header({ text }) {
           </div>
         </div>
         <div
-          className={`flex justify-between  bg-[#FFFFFF] p-[1.75rem] transition-all duration-300 ease-in-out ${
+          className={`flex justify-between items-center bg-[#FFFFFF] p-[1.75rem] transition-all duration-300 ease-in-out ${
             scroll ? "mt-[0]" : "mt-[1rem]"
           }`}
         >
@@ -131,7 +134,7 @@ function Header({ text }) {
             </Link>
           </div>
 
-          <div className="borderLeft flex items-center gap-[2rem]">
+          <div className="borderLeft flex items-center gap-[2rem] lg:hidden">
             <NavLink to={"/"}>{t("main")}</NavLink>
             <NavLink to={"/about"}>{t("about")}</NavLink>
             <NavLink to={"/services/layihelendirme"}>{t("services")}</NavLink>
@@ -141,6 +144,10 @@ function Header({ text }) {
             <NavLink to={"/license"}>{t("license")}</NavLink>
             <NavLink to={"/bloq"}>{t("bloq")}</NavLink>
             <NavLink to={"contact"}>{t("contact")}</NavLink>
+          </div>
+
+          <div>
+            <BurgerMenu />
           </div>
         </div>
       </header>

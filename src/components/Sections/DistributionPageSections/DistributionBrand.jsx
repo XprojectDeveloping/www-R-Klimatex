@@ -9,12 +9,16 @@ function DistributionBrand({ distributionData }) {
   const [t] = useTranslation("translation");
   return (
     <>
-      <section className="px-[6rem] py-[8rem]">
+      <section className="px-[6rem] lg:px-[3rem] md:px-[2.5rem] sm:px-[1.5rem] py-[6rem] lg:py-[3rem] md:py-[2.5rem] sm:py-[1.5rem]">
         <Swiper
           slidesPerView={0}
           loop={true}
           spaceBetween={0}
           breakpoints={{
+            566: {
+              slidesPerView: 1,
+              spaceBetween: 0,
+            },
             640: {
               slidesPerView: 2,
               spaceBetween: 0,
@@ -35,10 +39,10 @@ function DistributionBrand({ distributionData }) {
             distributionData?.map((item, index) => {
               return (
                 <SwiperSlide key={item.id || index}>
-                  <div className="p-[3rem]">
+                  <div className="p-[3rem] lg:p-[2rem]">
                     <Link to={"/distribution"} className="brand-hov">
                       <img
-                        className="w-full h-[45px] object-contain grayscale"
+                        className="w-full h-[45px] lg:h-[35px] object-contain grayscale"
                         src={item?.src || defaultImg}
                         alt={t("distributionBrandImgAlt")}
                       />

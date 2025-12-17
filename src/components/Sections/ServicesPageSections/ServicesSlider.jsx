@@ -11,13 +11,17 @@ function ServicesSlider({ sliderData }) {
 
   return (
     <>
-      <section className="px-[6rem]">
+      <section className="px-[6rem] lg:px-[3rem] md:px-[2.5rem] sm:px-[1.5rem]">
         <div className="flex items-center w-[100%] h-[100%]">
           <Swiper
             slidesPerView={0}
             loop={true}
             spaceBetween={20}
             breakpoints={{
+              566: {
+                slidesPerView: 1,
+                spaceBetween: 20,
+              },
               640: {
                 slidesPerView: 2,
                 spaceBetween: 20,
@@ -46,7 +50,7 @@ function ServicesSlider({ sliderData }) {
                           alt={t("servicesSliderImgAlt")}
                         />
 
-                        <p className="mt-[4.1rem] text-[2rem] text-[#40A6E0]">
+                        <p className="mt-[4.1rem] lg:mt-[2rem] text-[2rem] lg:text-[1.5rem] text-[#40A6E0]">
                           {ml(
                             item?.name_az || "",
                             item?.name_ru || "",

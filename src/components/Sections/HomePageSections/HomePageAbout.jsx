@@ -15,8 +15,8 @@ function HomePageAbout({
 
   return (
     <>
-      <section className="px-[6rem] lg:px-[3rem] mt-[9rem] mb-[9rem] flex">
-        <div className="flex flex-col gap-[4rem] lg:gap-[2rem]">
+      <section className="px-[6rem] lg:px-[3rem] md:px-[2.5rem] sm:px-[1.5rem] my-[9rem] lg:my-[5rem] md:my-[3.5rem] sm:my-[2.5rem] flex md:flex-col">
+        <div className="flex flex-col gap-[4rem] lg:gap-[2rem] sm:gap-[1rem]">
           <h2 className="text-[4rem] lg:text-[2rem]">{h2Title}</h2>
           <div
             className="text-[1.6rem] lg:text-[1.2rem] font-normal text-justify"
@@ -45,7 +45,7 @@ function HomePageAbout({
         </div>
         <img
           src={aboutDataimg || defaultImg}
-          className="px-[5rem] w-[50%] object-cover lg:h-[500px]"
+          className="px-[5rem] lg:px-[2rem] md:px-0 w-[50%] object-cover lg:h-[500px] md:h-full md:w-full md:mt-[3.5rem]"
           alt={t("homePageAboutMissiaImgAlt")}
         />
       </section>
