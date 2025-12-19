@@ -13,8 +13,8 @@ function Footer() {
   return (
     <>
       <footer>
-        <div className="flex items-center lg:flex-col justify-between py-[3rem] lg:py-[2.5rem] md:py-[1.5rem] px-[6rem] lg:px-[3rem] md:px-[2.5rem] sm:px-[1.5rem] bg-[#EE2F41]">
-          <div className="flex items-center gap-[10rem] md:gap-[4rem] sm:gap-[1rem]">
+        <div className="flex items-center lg:flex-col justify-between py-[3rem] lg:py-[2.5rem] md:py-[1.5rem] px-[6rem] lg:px-[3rem] md:px-[2.5rem] bg-[#EE2F41]">
+          <div className="flex sm:flex-col items-center gap-[10rem] md:gap-[4rem] sm:gap-[1rem]">
             <div className="flex items-center">
               <img
                 src={footerCallIco}
@@ -80,7 +80,7 @@ function Footer() {
             </button>
           </div>
         </div>
-        <div className="flex items-center justify-between py-[3rem] lg:py-[2.5rem] md:py-[1.5rem] px-[6rem] lg:px-[3rem] md:px-[2.5rem] bg-[#464E55]">
+        <div className="flex sm:flex-col gap-[1rem] items-center justify-between py-[3rem] lg:py-[2.5rem] md:py-[1.5rem] px-[6rem] lg:px-[3rem] md:px-[2.5rem] bg-[#464E55]">
           <div>
             <Link to={"/"}>
               <img

@@ -151,6 +151,15 @@ footer input {
   color: #ffffff;
 }
 
+.about-pageEx-hov{
+  transition: 0.3s linear;
+}
+
+.about-pageEx-hov:hover {
+  background-color: #3ea3dc;
+  color: #ffffff;
+}
+
 footer button {
   transition: 0.3s linear;
 }

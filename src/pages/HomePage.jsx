@@ -70,7 +70,7 @@ function HomePage() {
                   pText={t("homePageServicesP")}
                 />
 
-                <div className="mt-[-10rem] md:mt-[-5rem] sm:mt-[0rem] mb-[14rem] lg:mb-[6rem] md:mb-[4rem] sm:mb-[2rem]">
+                <div className="mt-[-10rem] md:mt-[-5rem] sm:mt-[2rem] mb-[14rem] lg:mb-[6rem] md:mb-[4rem] sm:mb-[2rem]">
                   {data?.service && (
                     <ServicesSlider sliderData={data?.service} />
                   )}

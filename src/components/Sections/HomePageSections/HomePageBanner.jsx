@@ -13,7 +13,7 @@ function HomePageBanner({ dataBanner }) {
           dataBanner?.map((item, index) => {
             return (
               <div
-                className="relative w-full h-[600px] overflow-hidden lg:h-[500px] md:h-[400px] sm:h-[350px]"
+                className="relative w-full h-[600px] overflow-hidden lg:h-[500px] md:h-[400px] sm:h-[350px] xs:h-[300px]"
                 key={item?.id || index}
               >
                 <img
@@ -26,7 +26,7 @@ function HomePageBanner({ dataBanner }) {
                 />
 
                 <div
-                  className="banner text-[5rem] lg:text-[3rem] text-[#ffffff] font-bold absolute inset-0 flex items-center justify-start px-20 lg:px-10 md:px-5 sm:px-4"
+                  className="banner text-[5rem] lg:text-[3rem] sm:text-[2.5rem] xs:text-[1.8rem] text-[#ffffff] font-bold absolute inset-0 flex items-center justify-start px-20 lg:px-10 md:px-5 sm:px-4"
                   dangerouslySetInnerHTML={{
                     __html: DOMPurify.sanitize(
                       ml(

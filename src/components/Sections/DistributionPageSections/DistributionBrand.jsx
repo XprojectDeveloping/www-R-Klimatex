@@ -11,7 +11,7 @@ function DistributionBrand({ distributionData }) {
     <>
       <section className="px-[6rem] lg:px-[3rem] md:px-[2.5rem] sm:px-[1.5rem] py-[6rem] lg:py-[3rem] md:py-[2.5rem] sm:py-[1.5rem]">
         <Swiper
-          slidesPerView={0}
+          slidesPerView={1}
           loop={true}
           spaceBetween={0}
           breakpoints={{

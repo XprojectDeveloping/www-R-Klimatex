@@ -14,7 +14,7 @@ function ServicesSlider({ sliderData }) {
       <section className="px-[6rem] lg:px-[3rem] md:px-[2.5rem] sm:px-[1.5rem]">
         <div className="flex items-center w-[100%] h-[100%]">
           <Swiper
-            slidesPerView={0}
+            slidesPerView={1}
             loop={true}
             spaceBetween={20}
             breakpoints={{

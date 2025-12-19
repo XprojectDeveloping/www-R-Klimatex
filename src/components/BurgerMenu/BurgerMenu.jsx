@@ -9,6 +9,14 @@ function BurgerMenu() {
 
   const toggleMenu = () => setOpen((prev) => !prev);
   const closeMenu = () => setOpen(false);
+
+  const mobileMenu = [
+    {
+      id: 1,
+      name: `${t("main")}`,
+      to: "/",
+    },
+  ];
   return (
     <>
       <button onClick={toggleMenu} className="4xl:hidden lg:flex">

@@ -94,7 +94,7 @@ function Header({ text }) {
               <img className="max-w-[2rem]" src={headerPhoneIco} alt="phone" />
               {text ?? "+994 51 325 13 25"}
             </a>
-            <div className="flex items-center gap-[3rem]">
+            <div className="flex items-center gap-[3rem] sm:hidden">
               <a href={data?.options?.options?.youtube} target="_blank">
                 <img
                   className="max-w-[2.4rem] object-contain"
@@ -120,14 +120,14 @@ function Header({ text }) {
           </div>
         </div>
         <div
-          className={`flex justify-between items-center bg-[#FFFFFF] p-[1.75rem] transition-all duration-300 ease-in-out ${
+          className={`flex justify-between items-center bg-[#FFFFFF] p-[1.75rem] sm:p-[1rem] transition-all duration-300 ease-in-out ${
             scroll ? "mt-[0]" : "mt-[1rem]"
           }`}
         >
           <div className="logo">
             <Link to={"/"}>
               <img
-                className="max-w-[13rem]"
+                className="max-w-[13rem] sm:max-w-[10rem]"
                 src={headerKlimatexLogo}
                 alt="klimatex-logo"
               />
@@ -146,9 +146,7 @@ function Header({ text }) {
             <NavLink to={"contact"}>{t("contact")}</NavLink>
           </div>
 
-          <div>
-            <BurgerMenu />
-          </div>
+          <BurgerMenu />
         </div>
       </header>
     </>
