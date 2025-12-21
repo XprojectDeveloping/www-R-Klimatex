@@ -39,9 +39,9 @@ function Distribution() {
                 />
               )}
 
-              <section>
-                <Tabs variant="unstyled" className="my-[6rem] mx-[6rem]">
-                  <TabList className="!grid grid-cols-12 gap-[2rem]">
+              <section className="px-[6rem] lg:px-[3rem] md:px-[2.5rem] sm:px-[1.5rem] py-[6rem] lg:py-[3rem] md:py-[2.5rem] sm:py-[1.5rem]">
+                <Tabs variant="unstyled">
+                  <TabList className="!grid grid-cols-12 lg:grid-cols-6 md:grid-cols-4 sm:grid-cols-2 gap-[2rem]">
                     {distributionFullData &&
                       distributionFullData.map((item) => {
                         return (
@@ -99,11 +99,11 @@ function Distribution() {
                                   <TabPanel key={sub.id} className="!p-0">
                                     {sub?.products?.map((item) => (
                                       <div
-                                        className="grid grid-cols-12 gap-[5rem] py-[5rem] items-center even:bg-[#f6f6f6] even:flex even:flex-row-reverse even:justify-evenly"
+                                        className="grid grid-cols-12 lg:grid-cols-6 gap-[5rem] py-[5rem] lg:py-[2rem] items-center even:flex even:flex-row-reverse even:lg:flex-col even:justify-evenly"
                                         key={item.id}
                                       >
                                         <div className="col-span-8">
-                                          <h3 className="text-[4rem] text-[#000000] pb-[2.5rem] font-semibold leading-100%">
+                                          <h3 className="text-[3rem] text-[#000000] pb-[2.5rem] font-semibold leading-100%">
                                             {ml(
                                               item?.title_az || "",
                                               item?.title_ru || "",
@@ -111,7 +111,7 @@ function Distribution() {
                                             )}
                                           </h3>
                                           <div
-                                            className="text-[2.3rem] text-[#000000] font-normal"
+                                            className="text-[1.5rem]  text-[#000000] font-normal"
                                             dangerouslySetInnerHTML={{
                                               __html: DOMPurify.sanitize(
                                                 ml(
@@ -125,7 +125,7 @@ function Distribution() {
                                         </div>
                                         <div className="col-span-4">
                                           <img
-                                            className="h-[400px] w-full object-contain"
+                                            className="h-[400px] lg:h-full w-full object-contain"
                                             src={item.src || defaultImg}
                                             alt={ml(
                                               item?.title_az || "",

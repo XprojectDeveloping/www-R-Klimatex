@@ -34,8 +34,8 @@ function Contact() {
                 />
               )}
 
-              <section className="px-[6rem] py-[6rem] bg-[#F1F1F1]">
-                <div className="flex justify-between gap-[2rem]">
+              <section className="px-[6rem] lg:px-[3rem] md:px-[2.5rem] sm:px-[1.5rem] py-[6rem] lg:py-[3rem] md:py-[2.5rem] sm:py-[1.5rem]  bg-[#F1F1F1]">
+                <div className="flex lg:flex-col justify-between gap-[2rem]">
                   <input
                     className="w-full h-[45px] text-[#949494] text-[1.3rem] pl-[1.1rem] outline-none placeholder-#949494"
                     placeholder="Ad, Soyad"

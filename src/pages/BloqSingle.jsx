@@ -36,7 +36,7 @@ function BloqSingle() {
                 />
               )}
 
-              <section className="px-[6rem] py-[6rem]">
+              <section className="px-[6rem] lg:px-[3rem] md:px-[2.5rem] sm:px-[1.5rem] py-[6rem] lg:py-[3rem] md:py-[2.5rem] sm:py-[1.5rem]">
                 {data?.blogall &&
                   data?.blogall?.map((item) => {
                     return (
@@ -47,7 +47,7 @@ function BloqSingle() {
                         />
 
                         <div
-                          className="text-[3.5rem] text-[#000000] pt-[3rem] font-semibold"
+                          className="text-[3.5rem] lg:text-[2.5rem] text-[#000000] pt-[3rem] font-semibold"
                           dangerouslySetInnerHTML={{
                             __html: DOMPurify.sanitize(
                               ml(
@@ -60,7 +60,7 @@ function BloqSingle() {
                         />
 
                         <div
-                          className="text-[1.9rem] text-[#000000] font-normal"
+                          className="text-[1.9rem] lg:text-[1.5rem] text-[#000000] font-normal"
                           dangerouslySetInnerHTML={{
                             __html: DOMPurify.sanitize(
                               ml(

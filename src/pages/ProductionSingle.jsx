@@ -46,7 +46,7 @@ function ProductionSingle() {
               <section className="bg-[#F0F0F0]">
                 <Tabs>
                   <div className="bg-[#F0F0F0]">
-                    <TabList className="flex px-[6rem] py-[6rem]">
+                    <TabList className="flex px-[6rem] lg:px-[3rem] md:px-[2.5rem] sm:px-[1.5rem] py-[6rem] lg:py-[3rem] md:py-[2.5rem] sm:py-[1.5rem]">
                       {curretItem?.products &&
                         curretItem?.products?.map((item) => {
                           return (
@@ -67,7 +67,7 @@ function ProductionSingle() {
                       curretItem?.products?.map((item) => {
                         return (
                           <TabPanel key={item?.id}>
-                            <div className="flex justify-between bg-[#ffffff] px-[6rem] py-[6rem]">
+                            <div className="flex lg:flex-col justify-between bg-[#ffffff] px-[6rem] lg:px-[3rem] md:px-[2.5rem] sm:px-[1.5rem] py-[6rem] lg:py-[3rem] md:py-[2.5rem] sm:py-[1.5rem]">
                               <div className="flex flex-col gap-[1.5rem]">
                                 <p className="text-[1.8rem] text-[#000000] font-normal">
                                   {t("ProductionSinglePageMaterial")}
@@ -118,7 +118,7 @@ function ProductionSingle() {
                               </div>
                             </div>
 
-                            <div className="flex flex-row items-center px-[6rem] py-[6rem] gap-[2rem]">
+                            <div className="flex flex-row md:flex-col items-center px-[6rem] lg:px-[3rem] md:px-[2.5rem] sm:px-[1.5rem] py-[6rem] lg:py-[3rem] md:py-[2.5rem] sm:py-[1.5rem] gap-[2rem]">
                               <div>
                                 <img
                                   src={item?.image_2 || defaultImg}
@@ -141,7 +141,7 @@ function ProductionSingle() {
                               </div>
                             </div>
 
-                            <div className="bg-[#ffffff] px-[6rem] py-[6rem]">
+                            <div className="bg-[#ffffff] px-[6rem] lg:px-[3rem] md:px-[2.5rem] sm:px-[1.5rem] py-[6rem] lg:py-[3rem] md:py-[2.5rem] sm:py-[1.5rem] gap-[2rem]">
                               <p className="text-[2rem] text-[#000000] font-normal leading-[100%] pb-[4rem]">
                                 {ml(
                                   item?.iki_qanadli_barmaqliq_az || "",
@@ -156,7 +156,7 @@ function ProductionSingle() {
                               />
                             </div>
 
-                            <div className="px-[6rem] py-[6rem]">
+                            <div className="px-[6rem] lg:px-[3rem] md:px-[2.5rem] sm:px-[1.5rem] py-[6rem] lg:py-[3rem] md:py-[2.5rem] sm:py-[1.5rem]">
                               <p className="text-[2rem] text-[#000000] font-normal leading-[100%] pb-[4rem]">
                                 {ml(
                                   item?.barmaqliq_secimi_cedveli_az || "",

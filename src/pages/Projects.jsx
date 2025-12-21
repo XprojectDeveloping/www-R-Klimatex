@@ -37,8 +37,8 @@ function Projects() {
               )}
               {/*Projects items section */}
               <div className="bg-[#EFEFEF]">
-                <section>
-                  <div className="py-[5rem]">
+                <section className="py-[6rem] lg:py-[3rem] md:py-[2.5rem] sm:py-[1.5rem]">
+                  <div>
                     {data?.layihe && (
                       <ProjectPageSection
                         projectData={data?.layihe}

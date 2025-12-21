@@ -37,8 +37,8 @@ function Production() {
                 />
               )}
               {/* Production items section */}
-              <section className="px-[6rem] py-[6rem] bg-[#F0F0F0]">
-                <div className="flex flex-row gap-[5rem]">
+              <section className="px-[6rem] lg:px-[3rem] md:px-[2.5rem] sm:px-[1.5rem] py-[6rem] lg:py-[3rem] md:py-[2.5rem] sm:py-[1.5rem] bg-[#F0F0F0]">
+                <div className="flex flex-row sm:flex-col gap-[5rem]">
                   {data?.istehsalat &&
                     data?.istehsalat?.map((item) => {
                       return (

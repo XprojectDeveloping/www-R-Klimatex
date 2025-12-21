@@ -48,10 +48,10 @@ function Services() {
               <div className="bg-[#EFEFEF]">
                 {/*Services slider and tab section */}
                 <section>
-                  <div className="px-[6rem] py-[6rem]">
+                  <div className="px-[6rem] lg:px-[3rem] md:px-[2.5rem] sm:px-[1.5rem] py-[6rem] lg:py-[3rem] md:py-[2.5rem] sm:py-[1.5rem]">
                     {/*Services slider section */}
                     <Swiper
-                      slidesPerView={0}
+                      slidesPerView={1}
                       loop={true}
                       spaceBetween={20}
                       breakpoints={{
@@ -101,16 +101,16 @@ function Services() {
                     </Swiper>
 
                     {/*Services tab section */}
-                    <Tabs className="mt-[6rem]">
+                    <Tabs className="mt-[6rem] lg:mt-[3rem]">
                       <TabList>
                         <Swiper>
                           {curretItem?.products &&
                             curretItem?.products?.map((item) => {
                               return (
                                 <SwiperSlide key={item.id}>
-                                  <div className="flex flex-row gap-[4rem]">
+                                  <div className="flex flex-row lg:flex-col gap-[4rem] lg:gap-[1rem]">
                                     <div className="flex flex-col">
-                                      <h2 className="text-[4rem] text-[#000000] leading-[100%] font-semibold pb-[4.3rem]">
+                                      <h2 className="text-[4rem] lg:text-[2.5rem] text-[#000000] leading-[100%] font-semibold pb-[4.3rem] lg:pb-[2.3rem]">
                                         {ml(
                                           item?.name_az,
                                           item?.name_ru,
@@ -118,7 +118,7 @@ function Services() {
                                         )}
                                       </h2>
                                       <div
-                                        className="text-[1.4rem] text-[#000000] font-normal"
+                                        className="text-[1.4rem] lg:text-[1.3rem] text-[#000000] font-normal"
                                         dangerouslySetInnerHTML={{
                                           __html: DOMPurify.sanitize(
                                             ml(
