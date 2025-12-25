@@ -6,7 +6,6 @@ import AboutPageMissiya from "../components/Sections/AboutPageSections/AboutPage
 import AboutPageImg from "../assets/img/body/about/aboutPageExhibition-img.png";
 import AboutPagePlayImg from "../assets/img/body/about/showRoomPlay.svg";
 import defaultImg from "../assets/img/default-image.jpg";
-import AboutPageExhibition from "../components/Sections/AboutPageSections/AboutPageExhibition.jsx";
 import AboutPageExhibitionImg from "../components/Sections/AboutPageSections/AboutPageExhibitionImg.jsx";
 import AboutPageShowroom from "../components/Sections/AboutPageSections/AboutPageShowroom.jsx";
 import AboutPageProduction from "../components/Sections/AboutPageSections/AboutPageProduction.jsx";
@@ -63,12 +62,6 @@ function About() {
               )}
 
               <div className="bg-[#EFEFEF]">
-                <AboutPageExhibition
-                  h2Title={t("aboutPageExhibitionH2")}
-                  pText={t("aboutPageExhibitionP")}
-                  aboutDataImg={AboutPageImg}
-                />
-
                 {data?.options?.about_page && (
                   <AboutPageExhibitionImg
                     h2Title={t("AboutPageExhibitionImgH2")}

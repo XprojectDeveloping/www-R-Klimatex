@@ -21,7 +21,7 @@ function AboutPageExhibitionImg({
               return (
                 <>
                   <div
-                    className="project-card col-span-6 md:col-span-6 sm:col-span-12"
+                    className="project-card col-span-4 lg:col-span-6 md:col-span-12"
                     key={item?.id}
                   >
                     <img

@@ -18,7 +18,11 @@ function AboutPageShowroom({
 
           <div className="absolute -translate-x-2/4 -translate-y-2/4 left-2/4 top-2/4">
             <a href={videoUrl} target="_blank">
-              <img className="max-w-[7rem]" src={playButton} alt="play" />
+              <img
+                className="max-w-[7rem] lg:max-w-[6rem] md:max-w-[4rem]"
+                src={playButton}
+                alt="play"
+              />
             </a>
           </div>
         </div>

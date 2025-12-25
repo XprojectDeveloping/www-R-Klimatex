@@ -151,7 +151,7 @@ footer input {
   color: #ffffff;
 }
 
-.about-pageEx-hov{
+.about-pageEx-hov {
   transition: 0.3s linear;
 }
 
@@ -189,7 +189,6 @@ footer a:hover {
   background-color: ;
 } */
 
-
 /* width */
 ::-webkit-scrollbar {
   width: 10px;
@@ -208,4 +207,23 @@ footer a:hover {
 /* Handle on hover */
 ::-webkit-scrollbar-thumb:hover {
   background: #ee2f41;
+}
+
+@media screen and (min-width: 1999px) {
+  body {
+    max-width: 1320px;
+    margin: 0 auto;
+  }
+  header {
+    max-width: 1320px;
+    margin: 0 auto;
+  }
+  .burger-hide {
+    display: none;
+  }
+}
+@media screen and (max-width: 1999px) {
+  .burger-hide {
+    display: none;
+  }
 }

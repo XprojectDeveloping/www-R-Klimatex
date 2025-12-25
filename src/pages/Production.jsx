@@ -55,7 +55,7 @@ function Production() {
 
                           <Link
                             to={`/production/s/${item?.id}/${item?.slug_az}`}
-                            className="product-hov text-center text-[1.5rem] text-[#000000] font-normal leading-[100%] bg-[#ffffff] px-[3.7rem] py-[1.8rem]"
+                            className="product-hov text-center text-[1.5rem] text-[#000000] font-normal leading-[100%] bg-[#ffffff] px-[3.5rem] py-[1.8rem]"
                           >
                             {ml(item?.name_az, item?.name_en, item?.name_ru)}
                           </Link>

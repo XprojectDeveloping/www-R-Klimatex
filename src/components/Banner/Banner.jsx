@@ -7,7 +7,7 @@ function Banner({ text, img }) {
       <section>
         <div className="relative flex items-center justify-center flex-col">
           <img
-            className="w-[100%] h-[100%] lg:h-[400px] md:h-[350px] sm:h-[250px]"
+            className="w-full h-[395px] lg:h-[350px]  md:h-[300px] sm:h-[250px]"
             src={img}
             alt={t("bannerImgAlt")}
           />

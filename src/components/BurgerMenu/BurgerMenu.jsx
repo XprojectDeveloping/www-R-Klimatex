@@ -19,7 +19,7 @@ function BurgerMenu() {
   ];
   return (
     <>
-      <button onClick={toggleMenu} className="4xl:hidden lg:flex">
+      <button onClick={toggleMenu} className="burger-hide lg:flex">
         <img
           className="max-w-[3rem]"
           src={headerBurgerMenuIco}
